@@ -11,51 +11,56 @@
 
 ## 如何贡献翻译
 
-我们使用[Crowdin](https://crowdin.com/)来管理翻译。如果您想贡献翻译，请按照以下步骤操作：
+如果您想贡献翻译，请按照以下步骤操作：
 
-1. 访问[CRESP Crowdin项目](https://crowdin.com/project/cresp-docs)（需要项目管理员提供链接）
-2. 注册或登录Crowdin账户
-3. 选择您想要翻译的语言
-4. 开始翻译！
+1. 克隆仓库：
+   ```bash
+   git clone https://github.com/wisupai/CRESP-DOCS.git
+   cd CRESP-DOCS
+   ```
+
+2. 安装依赖：
+   ```bash
+   yarn install
+   ```
+
+3. 如果需要生成最新的翻译文件：
+   ```bash
+   yarn write-translations
+   ```
+
+4. 编辑`i18n/zh-CN`目录下的翻译文件
+5. 提交您的更改并创建Pull Request
 
 ## 翻译工作流程
 
 1. 开发者在`docs/`目录中更新英文文档
-2. 当更改推送到main分支时，GitHub Actions会自动将更新的文件上传到Crowdin
-3. 翻译人员在Crowdin平台上进行翻译
-4. 每周日或通过手动触发，GitHub Actions会下载最新的翻译
-5. GitHub Actions会创建一个包含新翻译的Pull Request
-6. 审核并合并PR后，翻译会发布到网站上
+2. 使用`yarn write-translations`生成翻译文件
+3. 翻译人员在`i18n/`目录中进行翻译
+4. 提交翻译更改并创建Pull Request
+5. 审核并合并PR后，翻译会发布到网站上
 
 ## 本地测试翻译
 
 如果您想在本地测试翻译，可以按照以下步骤操作：
 
-1. 安装Crowdin CLI：
+1. 克隆仓库：
    ```bash
-   npm install -g @crowdin/cli
+   git clone https://github.com/wisupai/CRESP-DOCS.git
+   cd CRESP-DOCS
    ```
 
-2. 设置环境变量：
+2. 安装依赖：
    ```bash
-   export CROWDIN_PERSONAL_TOKEN=your_token
-   export CROWDIN_PROJECT_ID=your_project_id
+   yarn install
    ```
 
-3. 上传源文件：
+3. 启动中文版本的开发服务器：
    ```bash
-   crowdin upload sources
+   yarn start:zh
    ```
 
-4. 下载翻译：
-   ```bash
-   crowdin download
-   ```
-
-5. 启动本地开发服务器：
-   ```bash
-   npm run start -- --locale zh-CN
-   ```
+4. 在浏览器中访问 http://localhost:3000/zh-CN/ 查看中文版本
 
 ## 翻译指南
 
@@ -65,7 +70,7 @@
 2. 尊重原文的格式和标记
 3. 适应目标语言的语法和表达习惯
 4. 保留原文中的代码示例不变
-5. 如有疑问，请在Crowdin上添加评论或在GitHub上提出issue
+5. 如有疑问，请在GitHub上提出issue
 
 ## 文件结构
 
