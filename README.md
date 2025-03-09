@@ -1,5 +1,7 @@
 # CRESP Documentation
 
+[![Website](https://img.shields.io/badge/Website-cresp.resciencelab.ai-blue)](https://cresp.resciencelab.ai)
+
 This repository contains the documentation for the **Computational Research Environment Standardization Protocol (CRESP)**, an open standard designed to ensure reproducibility in computational research across various disciplines.
 
 ## About CRESP
@@ -13,6 +15,8 @@ Our goal is to address the challenges faced by researchers who use computational
 CRESP is open source and released under the [MIT License](LICENSE). This permissive license allows for maximum flexibility in using, modifying, and distributing the protocol.
 
 ## Documentation Website
+
+**Visit our documentation at: [https://cresp.resciencelab.ai](https://cresp.resciencelab.ai)**
 
 This documentation website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
