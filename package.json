@@ -12,7 +12,10 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "start:zh": "docusaurus start --locale zh-CN",
+    "build:i18n": "docusaurus build --locale zh-CN",
+    "crowdin:sync": "crowdin upload sources && crowdin download"
   },
   "dependencies": {
     "@docusaurus/core": "3.7.0",
@@ -24,6 +27,7 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@crowdin/cli": "^4.6.1",
     "@docusaurus/module-type-aliases": "3.7.0",
     "@docusaurus/tsconfig": "3.7.0",
     "@docusaurus/types": "3.7.0",

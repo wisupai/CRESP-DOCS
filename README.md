@@ -20,6 +20,13 @@ CRESP is open source and released under the [MIT License](LICENSE). This permiss
 
 This documentation website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
+### Supported Languages
+
+- English (default)
+- Chinese (Simplified)
+
+For information on how to contribute to translations, please see [TRANSLATION.md](TRANSLATION.md).
+
 ### Installation
 
 ```
