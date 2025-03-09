@@ -27,6 +27,7 @@ CRESP addresses these challenges by standardizing how computational environments
 - **Execution Standardization**: Provides clear instructions for running experiments
 - **Virtualization Support**: Facilitates deployment in virtual environments and containers
 - **Compatibility**: Works with existing project structures and configuration files
+- **Open Source**: Licensed under the permissive [MIT License](./license), allowing for broad adoption and modification
 
 ## Getting Started
 
@@ -62,6 +63,7 @@ This documentation provides comprehensive information about the CRESP protocol:
    - **[Python Projects](./python-projects)**: Using CRESP with Python
    - **[R Projects](./r-projects)**: Using CRESP with R
    - **[MATLAB Projects](./matlab-projects)**: Using CRESP with MATLAB
+4. **[License](./license)**: Information about the MIT License that CRESP is released under
 
 ## About the Project
 

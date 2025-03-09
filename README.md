@@ -8,6 +8,10 @@ CRESP is part of the Rescience Lab product by Wisup AI Ltd. The protocol is desi
 
 Our goal is to address the challenges faced by researchers who use computational methods but may lack strong programming backgrounds. By standardizing computational environments, CRESP helps researchers focus on their domain expertise rather than struggling with technical configuration issues.
 
+## License
+
+CRESP is open source and released under the [MIT License](LICENSE). This permissive license allows for maximum flexibility in using, modifying, and distributing the protocol.
+
 ## Documentation Website
 
 This documentation website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
@@ -56,4 +60,4 @@ We welcome contributions to the CRESP documentation! Please feel free to submit 
 
 ## License
 
-This documentation is licensed under the MIT License. See the LICENSE file for details.
+This documentation is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
