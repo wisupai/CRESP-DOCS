@@ -13,6 +13,14 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
+        <div className={styles.heroLogo}>
+          <img 
+            src="/img/cresp_logo_no_text_no_bg_2000x2000.png" 
+            alt="CRESP Logo" 
+            width="150" 
+            height="150" 
+          />
+        </div>
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>
@@ -61,6 +69,21 @@ function HomepageContent() {
                     <li>Facilitate collaboration and knowledge sharing</li>
                   </ul>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className={clsx('padding-vert--xl', styles.sectionBanner)}>
+        <div className="container">
+          <div className="row">
+            <div className="col col--10 col--offset-1">
+              <div className={styles.bannerContent}>
+                <img 
+                  src="/img/cresp_banner_3000x1000.png" 
+                  alt="CRESP Banner" 
+                  className={styles.bannerImage}
+                />
               </div>
             </div>
           </div>

@@ -10,6 +10,23 @@
   overflow: hidden;
 }
 
+.heroLogo {
+  margin-bottom: 2rem;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 @media screen and (max-width: 996px) {
   .heroBanner {
     padding: 2rem;
@@ -25,6 +42,28 @@
 
 .sectionAlt {
   background-color: var(--ifm-color-emphasis-100);
+}
+
+.sectionBanner {
+  background-color: var(--ifm-background-color);
+  padding: 0;
+}
+
+.bannerContent {
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease;
+}
+
+.bannerContent:hover {
+  transform: translateY(-5px);
+}
+
+.bannerImage {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .sectionTitle {
@@ -64,6 +103,12 @@ html[data-theme='light'] .sectionText {
   border-radius: var(--ifm-border-radius);
   background-color: var(--ifm-background-color);
   box-shadow: var(--ifm-global-shadow-lw);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--ifm-global-shadow-md);
 }
 
 .highlight h3 {

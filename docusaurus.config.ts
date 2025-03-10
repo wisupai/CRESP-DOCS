@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'CRESP Documentation',
   tagline: 'Computational Research Environment Standardization Protocol',
-  favicon: 'img/cresp_logo_2000x2000_no_bg.png',
+  favicon: 'img/cresp_logo_no_text_no_bg_2000x2000.png',
 
   // Set the production url of your site here
   url: 'https://cresp.resciencelab.ai',
@@ -54,13 +54,13 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/cresp_banner_3000x1000_dark_bg.png',
+    image: 'img/cresp_banner_3000x1000.png',
     navbar: {
       title: 'CRESP',
       logo: {
         alt: 'CRESP Logo',
-        src: 'img/cresp_logo_2000x2000_no_bg.png',
-        srcDark: 'img/cresp_logo_2000x2000_dark_bg.png',
+        src: 'img/cresp_logo_no_text_no_bg_2000x2000.png',
+        srcDark: 'img/cresp_logo_no_text_dark_bg_2000x2000.png',
       },
       items: [
         {
@@ -114,9 +114,9 @@ const config: Config = {
       copyright: `Copyright © ${new Date().getFullYear()} Wisup AI Ltd. Built with Docusaurus.`,
       logo: {
         alt: 'CRESP Logo',
-        src: 'img/cresp_logo_2000x2000_no_bg.png',
-        width: 100,
-        height: 100,
+        src: 'img/cresp_logo_with_text_2000x2000dark_bg.png',
+        width: 120,
+        height: 120,
       },
     },
     prism: {

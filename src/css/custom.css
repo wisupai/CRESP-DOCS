@@ -53,6 +53,7 @@
 /* CRESP Custom Styles */
 .navbar {
   background: var(--ifm-navbar-background-color);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* 导航栏链接颜色调整 */
@@ -62,10 +63,13 @@
 
 [data-theme='dark'] .navbar__link:hover {
   color: var(--cresp-teal);
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
 }
 
 [data-theme='dark'] .navbar__link--active {
   color: var(--cresp-teal);
+  font-weight: bold;
 }
 
 .navbar__title {
@@ -73,14 +77,45 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
 }
 
 .footer {
   background: var(--ifm-footer-background-color);
+  padding: 3rem 0;
+}
+
+.footer__logo {
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+  transition: transform 0.3s ease;
+}
+
+.footer__logo:hover {
+  transform: scale(1.05);
 }
 
 .hero {
   background: radial-gradient(circle at 50% 50%, var(--ifm-background-surface-color), var(--ifm-background-color));
+  padding: 6rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/img/cresp_logo_no_text_no_bg_2000x2000.png');
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  background-size: 300px;
+  opacity: 0.05;
+  z-index: 0;
 }
 
 .hero__title,
@@ -88,6 +123,18 @@
   background: var(--cresp-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  position: relative;
+  z-index: 1;
+}
+
+.hero__title {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero__subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 /* Add button style with gradient background */
@@ -96,6 +143,9 @@
   border: none;
   transition: all 0.3s ease;
   color: white !important; /* Ensure text is readable on all backgrounds */
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 .button--primary:hover {

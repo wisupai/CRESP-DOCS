@@ -12,7 +12,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'Standardized Research Environment',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/cresp_logo_no_text_no_bg_2000x2000.png').default,
     description: (
       <>
         CRESP provides a standardized protocol to describe computational research environments,
@@ -22,7 +22,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Multi-Language Support',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/cresp_logo_no_text_no_bg_2000x2000.png').default,
     description: (
       <>
         Compatible with various programming languages including Python (<code>pyproject.toml</code>),
@@ -33,7 +33,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'AI-Powered Research',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/cresp_logo_no_text_no_bg_2000x2000.png').default,
     description: (
       <>
         Part of the Rescience Lab platform, CRESP works seamlessly with AI agents to help researchers
@@ -47,7 +47,7 @@ function Feature({title, Svg, description}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img src={Svg} className={styles.featureSvg} alt={title} />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
