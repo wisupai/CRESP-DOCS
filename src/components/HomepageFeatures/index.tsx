@@ -11,32 +11,33 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'Standardized Research Environment',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        CRESP provides a standardized protocol to describe computational research environments,
+        ensuring experiment reproducibility across different platforms and systems.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Multi-Language Support',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Compatible with various programming languages including Python (<code>pyproject.toml</code>),
+        MATLAB (<code>matproject.toml</code>), and R (<code>rproject.toml</code>), making it versatile
+        for different research fields.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'AI-Powered Research',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Part of the Rescience Lab platform, CRESP works seamlessly with AI agents to help researchers
+        plan, code, execute, and document their computational experiments.
       </>
     ),
   },
