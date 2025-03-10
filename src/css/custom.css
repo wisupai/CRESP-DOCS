@@ -6,25 +6,136 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #2196F3;
+  --ifm-color-primary-dark: #1E88E5;
+  --ifm-color-primary-darker: #1976D2;
+  --ifm-color-primary-darkest: #1565C0;
+  --ifm-color-primary-light: #42A5F5;
+  --ifm-color-primary-lighter: #64B5F6;
+  --ifm-color-primary-lightest: #90CAF9;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  
+  /* CRESP Custom Colors */
+  --cresp-blue: #2196F3;
+  --cresp-teal: #21D5B0;
+  --cresp-blue-dark: #0D47A1;
+  --cresp-teal-dark: #00796B;
+  --cresp-gradient: linear-gradient(90deg, var(--cresp-blue-dark), var(--cresp-teal-dark));
+  --cresp-text-color: #0A1929;
+  
+  /* Light mode specific */
+  --ifm-navbar-background-color: #f5f6f7;
+  --ifm-background-surface-color: #ffffff;
+  --ifm-footer-background-color: #f5f6f7;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: #21D5B0;
+  --ifm-color-primary-dark: #1EB99A;
+  --ifm-color-primary-darker: #1AAD90;
+  --ifm-color-primary-darkest: #149178;
+  --ifm-color-primary-light: #39DDBC;
+  --ifm-color-primary-lighter: #57E2C6;
+  --ifm-color-primary-lightest: #82EBDA;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  
+  /* Dark mode adjustments */
+  --ifm-background-color: #0A1929;
+  --ifm-background-surface-color: #0F2942;
+  --ifm-footer-background-color: #0F2942;
+  --ifm-navbar-background-color: #0F2942;
+  --cresp-gradient: linear-gradient(90deg, var(--cresp-blue), var(--cresp-teal));
+  --cresp-text-color: white;
+}
+
+/* CRESP Custom Styles */
+.navbar {
+  background: var(--ifm-navbar-background-color);
+}
+
+/* 导航栏链接颜色调整 */
+[data-theme='dark'] .navbar__link {
+  color: var(--ifm-color-primary-lightest);
+}
+
+[data-theme='dark'] .navbar__link:hover {
+  color: var(--cresp-teal);
+}
+
+[data-theme='dark'] .navbar__link--active {
+  color: var(--cresp-teal);
+}
+
+.navbar__title {
+  background: var(--cresp-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.footer {
+  background: var(--ifm-footer-background-color);
+}
+
+.hero {
+  background: radial-gradient(circle at 50% 50%, var(--ifm-background-surface-color), var(--ifm-background-color));
+}
+
+.hero__title,
+.hero__subtitle {
+  background: var(--cresp-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Add button style with gradient background */
+.button--primary {
+  background: var(--cresp-gradient);
+  border: none;
+  transition: all 0.3s ease;
+  color: white !important; /* Ensure text is readable on all backgrounds */
+}
+
+.button--primary:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(33, 150, 243, 0.3);
+}
+
+/* Fix for text contrast in light mode */
+[data-theme='light'] .markdown a {
+  color: var(--cresp-blue-dark);
+  font-weight: 500;
+}
+
+[data-theme='light'] h1, 
+[data-theme='light'] h2, 
+[data-theme='light'] h3, 
+[data-theme='light'] h4, 
+[data-theme='light'] h5, 
+[data-theme='light'] h6 {
+  color: var(--cresp-text-color);
+}
+
+[data-theme='light'] .navbar__title,
+[data-theme='light'] .hero__title,
+[data-theme='light'] .hero__subtitle {
+  background: var(--cresp-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='light'] .menu__link--active:not(.menu__link--sublist) {
+  background: rgba(33, 150, 243, 0.1);
+  color: var(--cresp-blue-dark);
+  font-weight: 600;
+}
+
+[data-theme='light'] .table-of-contents__link--active {
+  color: var(--cresp-blue-dark);
+  font-weight: 600;
 }

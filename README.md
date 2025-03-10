@@ -1,6 +1,6 @@
 # CRESP Documentation
 
-![CRESP Protocol](./static/img/cresp_banner.jpg)
+![CRESP Protocol](./static/img/cresp_banner_3000x1000_dark_bg.png)
 
 [![Website](https://img.shields.io/badge/Website-cresp.resciencelab.ai-blue)](https://cresp.resciencelab.ai)
 
