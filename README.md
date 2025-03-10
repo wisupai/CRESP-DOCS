@@ -1,5 +1,7 @@
 # CRESP Documentation
 
+![CRESP Protocol](./static/img/cresp_banner.jpg)
+
 [![Website](https://img.shields.io/badge/Website-cresp.resciencelab.ai-blue)](https://cresp.resciencelab.ai)
 
 This repository contains the documentation for the **Computational Research Environment Standardization Protocol (CRESP)**, an open standard designed to ensure reproducibility in computational research across various disciplines.
