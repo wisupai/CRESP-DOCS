@@ -189,3 +189,29 @@
   color: var(--cresp-blue-dark);
   font-weight: 600;
 }
+
+/* Mobile Optimizations */
+@media screen and (max-width: 768px) {
+  .hero__title {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    word-break: keep-all;
+    hyphens: none;
+  }
+
+  .hero__subtitle {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+  }
+
+  .button--primary {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+  }
+
+  .navbar__title {
+    font-size: 1.2rem;
+  }
+}

@@ -16,3 +16,15 @@
 .featureSvg:hover {
   transform: scale(1.05);
 }
+
+@media screen and (max-width: 768px) {
+  .features {
+    padding: 1.5rem 0;
+  }
+
+  .featureSvg {
+    height: 120px;
+    width: 120px;
+    margin-bottom: 1rem;
+  }
+}
