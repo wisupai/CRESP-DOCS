@@ -17,8 +17,8 @@ function HomepageHeader() {
           <img 
             src="/img/cresp_logo_no_text_no_bg_2000x2000.png" 
             alt="CRESP Logo" 
-            width="150" 
-            height="150" 
+            width="180" 
+            height="180" 
           />
         </div>
         <Heading as="h1" className="hero__title">

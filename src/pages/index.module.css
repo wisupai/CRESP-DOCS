@@ -13,6 +13,12 @@
 .heroLogo {
   margin-bottom: 2rem;
   animation: float 6s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.heroLogo img {
+  animation: rotate 12s linear infinite;
+  transform-origin: center;
 }
 
 @keyframes float {
@@ -27,6 +33,15 @@
   }
 }
 
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 @media screen and (max-width: 996px) {
   .heroBanner {
     padding: 2rem 1rem;
@@ -35,6 +50,7 @@
   .heroLogo img {
     width: 100px;
     height: 100px;
+    animation: rotate 12s linear infinite;
   }
 
   .buttons {
