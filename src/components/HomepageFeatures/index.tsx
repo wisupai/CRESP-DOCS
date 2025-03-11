@@ -12,7 +12,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'Standardized Research Environment',
-    Svg: require('@site/static/img/cresp_logo_no_text_no_bg_2000x2000.png').default,
+    Svg: require('@site/static/img/env_no_bg.png').default,
     description: (
       <>
         CRESP provides a standardized protocol to describe computational research environments,
@@ -22,7 +22,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Multi-Language Support',
-    Svg: require('@site/static/img/cresp_logo_no_text_no_bg_2000x2000.png').default,
+    Svg: require('@site/static/img/multi_codes_no_bg.png').default,
     description: (
       <>
         Compatible with various programming languages including Python (<code>pyproject.toml</code>),
@@ -33,7 +33,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'AI-Powered Research',
-    Svg: require('@site/static/img/cresp_logo_no_text_no_bg_2000x2000.png').default,
+    Svg: require('@site/static/img/computer_use.png').default,
     description: (
       <>
         Part of the Rescience Lab platform, CRESP works seamlessly with AI agents to help researchers
