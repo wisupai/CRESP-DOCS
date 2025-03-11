@@ -110,7 +110,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('/img/cresp_logo_no_text_no_bg_2000x2000.png');
+  /* Removing the background image that creates the duplicate logo */
+  /* background-image: url('/img/cresp_logo_no_text_no_bg_2000x2000.png'); */
   background-repeat: no-repeat;
   background-position: 95% 50%;
   background-size: 300px;
