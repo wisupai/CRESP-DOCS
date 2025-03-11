@@ -60,7 +60,7 @@ const config: Config = {
       logo: {
         alt: 'CRESP Logo',
         src: 'img/cresp_logo_no_text_no_bg_2000x2000.png',
-        srcDark: 'img/cresp_logo_no_text_dark_bg_2000x2000.png',
+        srcDark: 'img/cresp_logo_no_text_no_bg_2000x2000.png',
       },
       items: [
         {
@@ -112,12 +112,6 @@ const config: Config = {
         },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Wisup AI Ltd. Built with Docusaurus.`,
-      logo: {
-        alt: 'CRESP Logo',
-        src: 'img/cresp_logo_with_text_2000x2000dark_bg.png',
-        width: 120,
-        height: 120,
-      },
     },
     prism: {
       theme: prismThemes.github,

@@ -40,6 +40,24 @@
   gap: 1rem;
 }
 
+.getStartedButton {
+  position: relative;
+  z-index: 1;
+  background: var(--cresp-gradient);
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.getStartedButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(33, 150, 243, 0.3);
+  filter: brightness(1.1);
+}
+
 .sectionAlt {
   background-color: var(--ifm-color-emphasis-100);
 }
@@ -47,23 +65,21 @@
 .sectionBanner {
   background-color: var(--ifm-background-color);
   padding: 0;
+  width: 100%;
+  margin: 0;
 }
 
 .bannerContent {
+  width: 100%;
   overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-  transition: transform 0.3s ease;
-}
-
-.bannerContent:hover {
-  transform: translateY(-5px);
 }
 
 .bannerImage {
   width: 100%;
   height: auto;
   display: block;
+  margin: 0;
+  padding: 0;
 }
 
 .sectionTitle {

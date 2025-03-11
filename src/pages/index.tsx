@@ -27,7 +27,7 @@ function HomepageHeader() {
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
-            className="button button--primary button--lg"
+            className={clsx('button button--primary button--lg', styles.getStartedButton)}
             to="/docs/intro">
             Get Started with CRESP →
           </Link>
@@ -74,19 +74,13 @@ function HomepageContent() {
           </div>
         </div>
       </div>
-      <div className={clsx('padding-vert--xl', styles.sectionBanner)}>
-        <div className="container">
-          <div className="row">
-            <div className="col col--10 col--offset-1">
-              <div className={styles.bannerContent}>
-                <img 
-                  src="/img/cresp_banner_3000x1000.png" 
-                  alt="CRESP Banner" 
-                  className={styles.bannerImage}
-                />
-              </div>
-            </div>
-          </div>
+      <div className={styles.sectionBanner}>
+        <div className={styles.bannerContent}>
+          <img 
+            src="/img/cresp_banner_3000x1000.png" 
+            alt="CRESP Banner" 
+            className={styles.bannerImage}
+          />
         </div>
       </div>
       <div className={clsx('padding-vert--lg', styles.sectionContact)}>
