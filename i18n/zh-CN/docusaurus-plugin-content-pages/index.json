@@ -1,0 +1,8 @@
+{
+  "title": "CRESP 文档",
+  "description": "CRESP - 计算研究环境标准化协议",
+  "theme.ErrorPageContent.title": "页面崩溃",
+  "theme.NotFound.title": "页面未找到",
+  "theme.NotFound.p1": "我们找不到您要找的页面。",
+  "theme.NotFound.p2": "请联系将您链接到此URL的网站的所有者，并告知他们链接已损坏。"
+} 

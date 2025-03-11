@@ -309,5 +309,77 @@
   "theme.ErrorPageContent.tryAgain": {
     "message": "重试",
     "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
+  "homepage.hero.getStarted": {
+    "message": "开始使用 CRESP →"
+  },
+  "homepage.features.standardizedEnvironment.title": {
+    "message": "标准化研究环境"
+  },
+  "homepage.features.standardizedEnvironment.description": {
+    "message": "CRESP提供了一种标准化的协议来描述计算研究环境，确保实验在不同平台和系统上的可复现性。"
+  },
+  "homepage.features.multiLanguageSupport.title": {
+    "message": "多语言支持"
+  },
+  "homepage.features.multiLanguageSupport.description": {
+    "message": "兼容多种编程语言，包括Python（pyproject.toml）、MATLAB（matproject.toml）和R（rproject.toml），使其适用于不同的研究领域。"
+  },
+  "homepage.features.aiPoweredResearch.title": {
+    "message": "AI驱动的研究"
+  },
+  "homepage.features.aiPoweredResearch.description": {
+    "message": "作为Rescience Lab平台的一部分，CRESP与AI代理无缝协作，帮助研究人员规划、编码、执行和记录他们的计算实验。"
+  },
+  "homepage.whyCresp.title": {
+    "message": "为什么选择CRESP？"
+  },
+  "homepage.whyCresp.description": {
+    "message": "在计算研究时代，可复现性已成为一个关键挑战。CRESP（计算研究环境标准化协议）通过提供一种标准化的方式来描述和共享研究环境，解决了这一挑战。"
+  },
+  "homepage.whyCresp.forResearchers.title": {
+    "message": "对于研究人员"
+  },
+  "homepage.whyCresp.forResearchers.point1": {
+    "message": "轻松共享您的研究环境"
+  },
+  "homepage.whyCresp.forResearchers.point2": {
+    "message": "确保实验的可复现性"
+  },
+  "homepage.whyCresp.forResearchers.point3": {
+    "message": "专注于研究，而非环境配置"
+  },
+  "homepage.whyCresp.forInstitutions.title": {
+    "message": "对于机构"
+  },
+  "homepage.whyCresp.forInstitutions.point1": {
+    "message": "标准化研究实践"
+  },
+  "homepage.whyCresp.forInstitutions.point2": {
+    "message": "提高研究质量和可靠性"
+  },
+  "homepage.whyCresp.forInstitutions.point3": {
+    "message": "促进协作和知识共享"
+  },
+  "homepage.contact.title": {
+    "message": "联系我们"
+  },
+  "homepage.contact.company": {
+    "message": "公司"
+  },
+  "homepage.contact.email": {
+    "message": "邮箱"
+  },
+  "title": {
+    "message": "CRESP 文档",
+    "description": "The title for the website"
+  },
+  "tagline": {
+    "message": "计算研究环境标准化协议",
+    "description": "The tagline for the website"
+  },
+  "description": {
+    "message": "CRESP - 计算研究环境描述和复现的标准化协议",
+    "description": "The description for the website"
   }
 }

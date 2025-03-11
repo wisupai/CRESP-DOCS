@@ -5,6 +5,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
+import Translate from '@docusaurus/Translate';
 
 import styles from './index.module.css';
 
@@ -22,14 +23,16 @@ function HomepageHeader() {
           />
         </div>
         <Heading as="h1" className="hero__title">
-          {siteConfig.title}
+          <Translate id="title">{siteConfig.title}</Translate>
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className="hero__subtitle">
+          <Translate id="tagline">{siteConfig.tagline}</Translate>
+        </p>
         <div className={styles.buttons}>
           <Link
             className={clsx('button button--primary button--lg', styles.getStartedButton)}
             to="/docs/intro">
-            Get Started with CRESP →
+            <Translate id="homepage.hero.getStarted">Get Started with CRESP →</Translate>
           </Link>
         </div>
       </div>
@@ -45,28 +48,42 @@ function HomepageContent() {
           <div className="row">
             <div className="col col--8 col--offset-2">
               <Heading as="h2" className={styles.sectionTitle}>
-                Why CRESP?
+                <Translate id="homepage.whyCresp.title">Why CRESP?</Translate>
               </Heading>
               <p className={styles.sectionText}>
-                In the era of computational research, reproducibility has become a critical challenge.
-                CRESP (Computational Research Environment Standardization Protocol) addresses this
-                challenge by providing a standardized way to describe and share research environments.
+                <Translate id="homepage.whyCresp.description">In the era of computational research, reproducibility has become a critical challenge. CRESP (Computational Research Environment Standardization Protocol) addresses this challenge by providing a standardized way to describe and share research environments.</Translate>
               </p>
               <div className={styles.sectionHighlights}>
                 <div className={styles.highlight}>
-                  <Heading as="h3">For Researchers</Heading>
+                  <Heading as="h3">
+                    <Translate id="homepage.whyCresp.forResearchers.title">For Researchers</Translate>
+                  </Heading>
                   <ul>
-                    <li>Easily share your research environment</li>
-                    <li>Ensure reproducibility of your experiments</li>
-                    <li>Focus on research, not environment setup</li>
+                    <li>
+                      <Translate id="homepage.whyCresp.forResearchers.point1">Easily share your research environment</Translate>
+                    </li>
+                    <li>
+                      <Translate id="homepage.whyCresp.forResearchers.point2">Ensure reproducibility of your experiments</Translate>
+                    </li>
+                    <li>
+                      <Translate id="homepage.whyCresp.forResearchers.point3">Focus on research, not environment setup</Translate>
+                    </li>
                   </ul>
                 </div>
                 <div className={styles.highlight}>
-                  <Heading as="h3">For Institutions</Heading>
+                  <Heading as="h3">
+                    <Translate id="homepage.whyCresp.forInstitutions.title">For Institutions</Translate>
+                  </Heading>
                   <ul>
-                    <li>Standardize research practices</li>
-                    <li>Improve research quality and reliability</li>
-                    <li>Facilitate collaboration and knowledge sharing</li>
+                    <li>
+                      <Translate id="homepage.whyCresp.forInstitutions.point1">Standardize research practices</Translate>
+                    </li>
+                    <li>
+                      <Translate id="homepage.whyCresp.forInstitutions.point2">Improve research quality and reliability</Translate>
+                    </li>
+                    <li>
+                      <Translate id="homepage.whyCresp.forInstitutions.point3">Facilitate collaboration and knowledge sharing</Translate>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -88,14 +105,18 @@ function HomepageContent() {
           <div className="row">
             <div className="col col--6 col--offset-3 text--center">
               <Heading as="h2" className={styles.sectionTitle}>
-                Contact Us
+                <Translate id="homepage.contact.title">Contact Us</Translate>
               </Heading>
               <div className={styles.contactInfo}>
                 <p>
-                  <strong>Company:</strong> Wisup AI Ltd
+                  <strong>
+                    <Translate id="homepage.contact.company">Company:</Translate>
+                  </strong> Wisup AI Ltd
                 </p>
                 <p>
-                  <strong>Email:</strong>{' '}
+                  <strong>
+                    <Translate id="homepage.contact.email">Email:</Translate>
+                  </strong>{' '}
                   <a href="mailto:team@wisup.ai">team@wisup.ai</a>
                 </p>
               </div>
