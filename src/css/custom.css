@@ -21,7 +21,7 @@
   --cresp-teal: #21D5B0;
   --cresp-blue-dark: #0D47A1;
   --cresp-teal-dark: #00796B;
-  --cresp-gradient: linear-gradient(90deg, var(--cresp-blue-dark), var(--cresp-teal-dark));
+  --cresp-gradient: linear-gradient(90deg, var(--cresp-blue), var(--cresp-teal));
   --cresp-text-color: #0A1929;
   
   /* Light mode specific */
