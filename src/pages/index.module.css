@@ -164,10 +164,9 @@ html[data-theme='light'] .sectionText {
   gap: 2rem;
   margin-top: 2rem;
 }
-
 .highlight {
   padding: 1.5rem;
-  border-radius: var(--ifm-border-radius);
+  border-radius: 16px;
   background-color: var(--ifm-background-color);
   box-shadow: var(--ifm-global-shadow-lw);
   transition: transform 0.3s ease, box-shadow 0.3s ease;

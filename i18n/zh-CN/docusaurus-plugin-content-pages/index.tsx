@@ -18,17 +18,17 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: '标准化研究环境',
-    Svg: require('@site/static/img/env_no_bg.png').default,
+    Svg: require('@site/static/img/features/env_no_bg.png').default,
     description: 'CRESP提供了一种标准化的协议来描述计算研究环境，确保实验在不同平台和系统上的可复现性。',
   },
   {
     title: '多语言支持',
-    Svg: require('@site/static/img/multi_codes_no_bg.png').default,
+    Svg: require('@site/static/img/features/multi_codes_no_bg.png').default,
     description: 'CRESP支持多种编程语言和研究工具，包括Python、R、MATLAB等，满足不同学科研究人员的需求。',
   },
   {
     title: 'AI驱动的研究',
-    Svg: require('@site/static/img/computer_use.png').default,
+    Svg: require('@site/static/img/features/computer_use.png').default,
     description: 'CRESP与AI助手集成，帮助研究人员规划、执行和记录实验，提高研究效率和质量。',
   },
 ];

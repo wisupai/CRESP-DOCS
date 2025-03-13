@@ -20,6 +20,22 @@ Computational research faces a significant reproducibility challenge. Despite be
 
 CRESP addresses these challenges by standardizing how computational environments and experiments are described.
 
+## Framework Architecture
+
+CRESP is built on a layered architecture that provides a comprehensive solution for computational reproducibility:
+
+![CRESP Framework Architecture](/img/CRESP%20Framework%20Architecture.svg)
+
+The architecture consists of five main layers:
+
+1. **Core Layer**: Handles protocol parsing, validation, configuration management, and API interfaces
+2. **Environment Layer**: Analyzes requirements, builds and verifies environments, and manages randomness for reproducibility
+3. **Container Layer**: Provides support for containerization technologies like Docker and Singularity
+4. **Execution Layer**: Manages workflow execution and monitors resource usage and execution status
+5. **Adaptation Layer**: Offers language-specific adapters for Python, R, MATLAB, Julia, and a plugin system for extensions
+
+This layered approach ensures that CRESP can handle the complete lifecycle of computational experiments while maintaining flexibility and extensibility.
+
 ## Key Features
 
 - **Cross-Language Support**: Works with Python, R, MATLAB, and other computational environments

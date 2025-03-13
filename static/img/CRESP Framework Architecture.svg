@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 720">
+  <!-- Background with subtle grid -->
+  <defs>
+    <pattern id="smallGrid" width="10" height="10" patternUnits="userSpaceOnUse">
+      <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#f0f0f0" stroke-width="0.5"/>
+    </pattern>
+    <pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse">
+      <rect width="100" height="100" fill="url(#smallGrid)"/>
+      <path d="M 100 0 L 0 0 0 100" fill="none" stroke="#e0e0e0" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1000" height="720" fill="#ffffff"/>
+  <rect width="1000" height="720" fill="url(#grid)" opacity="0.3"/>
+  
+  <!-- Title -->
+  <rect x="250" y="20" width="500" height="50" rx="10" fill="#2b6cb0"/>
+  <text x="500" y="53" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#ffffff">CRESP Framework Architecture</text>
+  
+  <!-- Core Layer -->
+  <rect x="100" y="90" width="800" height="140" rx="10" fill="#ebf8ff" stroke="#3182ce" stroke-width="2"/>
+  <rect x="100" y="90" width="180" height="40" rx="10" fill="#3182ce"/>
+  <text x="190" y="117" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#ffffff">Core Layer</text>
+  
+  <rect x="120" y="140" width="180" height="70" rx="5" fill="#bee3f8" stroke="#3182ce" stroke-width="1"/>
+  <text x="210" y="165" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#2c5282">Protocol Parser</text>
+  <text x="210" y="185" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#333333">TOML Parsing &amp; Data Structures</text>
+  <text x="210" y="202" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#333333">Version Compatibility</text>
+  
+  <rect x="320" y="140" width="180" height="70" rx="5" fill="#bee3f8" stroke="#3182ce" stroke-width="1"/>
+  <text x="410" y="165" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#2c5282">Protocol Validator</text>
+  <text x="410" y="185" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#333333">Schema Validation</text>
+  <text x="410" y="202" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#333333">Consistency &amp; Completeness</text>
+  
+  <rect x="520" y="140" width="180" height="70" rx="5" fill="#bee3f8" stroke="#3182ce" stroke-width="1"/>
+  <text x="610" y="165" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#2c5282">Configuration Manager</text>
+  <text x="610" y="185" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#333333">Global Settings</text>
+  <text x="610" y="202" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#333333">Logging &amp; Error Handling</text>
+  
+  <rect x="720" y="140" width="160" height="70" rx="5" fill="#bee3f8" stroke="#3182ce" stroke-width="1"/>
+  <text x="800" y="165" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#2c5282">API Interface</text>
+  <text x="800" y="185" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#333333">Public Access Points</text>
+  <text x="800" y="202" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#333333">Event System</text>
+  
+  <!-- Environment Layer -->
+  <rect x="100" y="250" width="800" height="140" rx="10" fill="#e6fffa" stroke="#38b2ac" stroke-width="2"/>
+  <rect x="100" y="250" width="180" height="40" rx="10" fill="#38b2ac"/>
+  <text x="190" y="277" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#ffffff">Environment Layer</text>
+  
+  <rect x="120" y="300" width="180" height="70" rx="5" fill="#b2f5ea" stroke="#38b2ac" stroke-width="1"/>
+  <text x="210" y="325" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#234e52">Requirements Analyzer</text>
+  <text x="210" y="345" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#333333">Hardware Requirements</text>
+  <text x="210" y="362" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#333333">Software Dependencies</text>
+  
+  <rect x="320" y="300" width="180" height="70" rx="5" fill="#b2f5ea" stroke="#38b2ac" stroke-width="1"/>
+  <text x="410" y="325" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#234e52">Environment Builder</text>
+  <text x="410" y="345" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#333333">Virtual Environment Setup</text>
+  <text x="410" y="362" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#333333">Dependency Installation</text>
+  
+  <rect x="520" y="300" width="180" height="70" rx="5" fill="#b2f5ea" stroke="#38b2ac" stroke-width="1"/>
+  <text x="610" y="325" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#234e52">Environment Verifier</text>
+  <text x="610" y="345" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#333333">Consistency Checks</text>
+  <text x="610" y="362" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#333333">Compatibility Testing</text>
+  
+  <rect x="720" y="300" width="160" height="70" rx="5" fill="#b2f5ea" stroke="#38b2ac" stroke-width="1"/>
+  <text x="800" y="325" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#234e52">Randomness Manager</text>
+  <text x="800" y="345" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#333333">Seed Control</text>
+  <text x="800" y="362" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#333333">Determinism Guarantee</text>
+  
+  <!-- Container Layer -->
+  <rect x="100" y="410" width="380" height="140" rx="10" fill="#fffaf0" stroke="#dd6b20" stroke-width="2"/>
+  <rect x="100" y="410" width="180" height="40" rx="10" fill="#dd6b20"/>
+  <text x="190" y="437" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#ffffff">Container Layer</text>
+  
+  <rect x="120" y="460" width="160" height="70" rx="5" fill="#feebc8" stroke="#dd6b20" stroke-width="1"/>
+  <text x="200" y="485" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#7b341e">Docker Support</text>
+  <text x="200" y="505" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#333333">Dockerfile Generation</text>
+  <text x="200" y="522" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#333333">Image Building &amp; Management</text>
+  
+  <rect x="300" y="460" width="160" height="70" rx="5" fill="#feebc8" stroke="#dd6b20" stroke-width="1"/>
+  <text x="380" y="485" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#7b341e">Singularity Support</text>
+  <text x="380" y="505" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#333333">Definition File Generation</text>
+  <text x="380" y="522" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#333333">Container Building &amp; Management</text>
+  
+  <!-- Execution Layer -->
+  <rect x="520" y="410" width="380" height="140" rx="10" fill="#fff5f5" stroke="#e53e3e" stroke-width="2"/>
+  <rect x="520" y="410" width="180" height="40" rx="10" fill="#e53e3e"/>
+  <text x="610" y="437" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#ffffff">Execution Layer</text>
+  
+  <rect x="540" y="460" width="160" height="70" rx="5" fill="#fed7d7" stroke="#e53e3e" stroke-width="1"/>
+  <text x="620" y="485" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#822727">Workflow Engine</text>
+  <text x="620" y="505" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#333333">Experiment Step Execution</text>
+  <text x="620" y="522" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#333333">Flow Control</text>
+  
+  <rect x="720" y="460" width="160" height="70" rx="5" fill="#fed7d7" stroke="#e53e3e" stroke-width="1"/>
+  <text x="800" y="485" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#822727">Monitoring System</text>
+  <text x="800" y="505" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#333333">Resource Usage Tracking</text>
+  <text x="800" y="522" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#333333">Execution Status Monitoring</text>
+  
+  <!-- Adaptation Layer -->
+  <rect x="100" y="570" width="800" height="140" rx="10" fill="#ebf4ff" stroke="#4c51bf" stroke-width="2"/>
+  <rect x="100" y="570" width="180" height="40" rx="10" fill="#4c51bf"/>
+  <text x="190" y="597" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#ffffff">Adaptation Layer</text>
+  
+  <rect x="120" y="620" width="140" height="70" rx="5" fill="#c3dafe" stroke="#4c51bf" stroke-width="1"/>
+  <text x="190" y="645" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#3c366b">Python Adapter</text>
+  <text x="190" y="665" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#333333">Virtual Environment</text>
+  <text x="190" y="682" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#333333">Package Management</text>
+  
+  <rect x="280" y="620" width="140" height="70" rx="5" fill="#c3dafe" stroke="#4c51bf" stroke-width="1"/>
+  <text x="350" y="645" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#3c366b">R Adapter</text>
+  <text x="350" y="665" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#333333">Package Management</text>
+  <text x="350" y="682" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#333333">Environment Config</text>
+  
+  <rect x="440" y="620" width="140" height="70" rx="5" fill="#c3dafe" stroke="#4c51bf" stroke-width="1"/>
+  <text x="510" y="645" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#3c366b">MATLAB Adapter</text>
+  <text x="510" y="665" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#333333">Toolbox Management</text>
+  <text x="510" y="682" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#333333">License Handling</text>
+  
+  <rect x="600" y="620" width="140" height="70" rx="5" fill="#c3dafe" stroke="#4c51bf" stroke-width="1"/>
+  <text x="670" y="645" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#3c366b">Julia Adapter</text>
+  <text x="670" y="665" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#333333">Package Management</text>
+  <text x="670" y="682" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#333333">Project Environment</text>
+  
+  <rect x="760" y="620" width="120" height="70" rx="5" fill="#c3dafe" stroke="#4c51bf" stroke-width="1"/>
+  <text x="820" y="645" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#3c366b">Plugin System</text>
+  <text x="820" y="665" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#333333">Custom Extensions</text>
+  <text x="820" y="682" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#333333">3rd Party Integration</text>
+  
+  <!-- Connection lines with arrows -->
+  <!-- Core to Environment -->
+  <path d="M500,230 L500,240 L505,240 L500,250 L495,240 L500,240" fill="#4a5568" stroke="#4a5568" stroke-width="1"/>
+  <line x1="500" y1="230" x2="500" y2="240" stroke="#4a5568" stroke-width="2"/>
+  
+  <!-- Environment to Container/Execution -->
+  <path d="M290,390 L290,400 L295,400 L290,410 L285,400 L290,400" fill="#4a5568" stroke="#4a5568" stroke-width="1"/>
+  <line x1="290" y1="390" x2="290" y2="400" stroke="#4a5568" stroke-width="2"/>
+  
+  <path d="M710,390 L710,400 L715,400 L710,410 L705,400 L710,400" fill="#4a5568" stroke="#4a5568" stroke-width="1"/>
+  <line x1="710" y1="390" x2="710" y2="400" stroke="#4a5568" stroke-width="2"/>
+  
+  <!-- Container/Execution to Adaptation -->
+  <path d="M290,550 L290,560 L295,560 L290,570 L285,560 L290,560" fill="#4a5568" stroke="#4a5568" stroke-width="1"/>
+  <line x1="290" y1="550" x2="290" y2="560" stroke="#4a5568" stroke-width="2"/>
+  
+  <path d="M710,550 L710,560 L715,560 L710,570 L705,560 L710,560" fill="#4a5568" stroke="#4a5568" stroke-width="1"/>
+  <line x1="710" y1="550" x2="710" y2="560" stroke="#4a5568" stroke-width="2"/>
+  
+  <!-- Horizontal connections -->
+  <path d="M480,480 L490,480 L490,485 L500,480 L490,475 L490,480" fill="#4a5568" stroke="#4a5568" stroke-width="1"/>
+  <line x1="480" y1="480" x2="490" y2="480" stroke="#4a5568" stroke-width="2"/>
+  
+  <path d="M520,480 L510,480 L510,485 L500,480 L510,475 L510,480" fill="#4a5568" stroke="#4a5568" stroke-width="1"/>
+  <line x1="520" y1="480" x2="510" y2="480" stroke="#4a5568" stroke-width="2"/>
+</svg>
