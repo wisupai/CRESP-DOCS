@@ -263,3 +263,18 @@ html[data-theme='light'] :global(.button--secondary:hover) {
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+/* 版本号徽章样式 */
+.versionBadge {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  border-radius: 16px;
+  padding: 4px 12px;
+  font-size: 0.9rem;
+  margin: 0 auto 1.5rem;
+  display: inline-block;
+}
+
+.versionBadge span {
+  font-weight: 500;
+}

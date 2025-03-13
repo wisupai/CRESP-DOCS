@@ -1,6 +1,6 @@
 {
   "name": "cresp-docs",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
@@ -14,7 +14,11 @@
     "write-heading-ids": "docusaurus write-heading-ids",
     "typecheck": "tsc",
     "start:zh": "docusaurus start --locale zh-CN",
-    "build:i18n": "docusaurus build --locale zh-CN"
+    "build:i18n": "docusaurus build --locale zh-CN",
+    "prepare": "husky install",
+    "version": "node scripts/version.js",
+    "docs:version": "node scripts/docusaurus-version.js",
+    "docs:init-version": "node scripts/init-version.js"
   },
   "dependencies": {
     "@docusaurus/core": "3.7.0",
@@ -26,9 +30,12 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^18.6.1",
+    "@commitlint/config-conventional": "^18.6.1",
     "@docusaurus/module-type-aliases": "3.7.0",
     "@docusaurus/tsconfig": "3.7.0",
     "@docusaurus/types": "3.7.0",
+    "husky": "^8.0.3",
     "typescript": "~5.6.2"
   },
   "browserslist": {

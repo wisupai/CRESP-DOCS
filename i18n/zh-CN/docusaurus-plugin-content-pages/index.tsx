@@ -49,11 +49,13 @@ function HomepageHeader() {
         <Heading as="h1" className="hero__title">
           CRESP 文档
         </Heading>
-        <p className="hero__subtitle">计算研究环境标准化协议</p>
+        <p className="hero__subtitle">
+          计算研究环境标准化协议
+        </p>
         <div className={styles.buttons}>
           <Link
             className={clsx('button button--primary button--lg', styles.getStartedButton)}
-            to="/docs/intro">
+            to="/zh-CN/docs/intro">
             开始使用 CRESP →
           </Link>
         </div>
@@ -62,7 +64,7 @@ function HomepageHeader() {
   );
 }
 
-function HomepageFeatures(): JSX.Element {
+function HomepageFeatures(): React.ReactNode {
   return (
     <section className={styles.features}>
       <div className="container">

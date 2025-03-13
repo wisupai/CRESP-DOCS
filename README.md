@@ -3,6 +3,8 @@
 ![CRESP Protocol](./static/img/cresp_banner_3000x1000.png)
 
 [![Website](https://img.shields.io/badge/Website-cresp.resciencelab.ai-blue)](https://cresp.resciencelab.ai)
+[![Version](https://img.shields.io/badge/Version-0.1.0-green)](https://github.com/wisupai/CRESP-DOCS/releases)
+[![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 
 This repository contains the documentation for the **Computational Research Environment Standardization Protocol (CRESP)**, an open standard designed to ensure reproducibility in computational research across various disciplines.
 
@@ -69,7 +71,13 @@ If you are using GitHub pages for hosting, this command is a convenient way to b
 
 ## Contributing
 
-We welcome contributions to the CRESP documentation! Please feel free to submit issues or pull requests to help improve the documentation.
+We welcome contributions to the CRESP documentation! Please see our [Contributing Guidelines](CONTRIBUTING.md) for more information on how to get involved.
+
+## Versioning
+
+This project follows [Semantic Versioning](https://semver.org/). For the versions available, see the [tags on this repository](https://github.com/wisupai/CRESP-DOCS/tags).
+
+All notable changes to this project are documented in the [CHANGELOG](CHANGELOG.md).
 
 ## License
 

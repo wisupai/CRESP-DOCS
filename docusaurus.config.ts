@@ -49,6 +49,14 @@ const config: Config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/wisupai/CRESP-DOCS/tree/main/',
+          showLastUpdateTime: true,
+          showLastUpdateAuthor: true,
+          versions: {
+            current: {
+              label: 'Current',
+              path: '',
+            },
+          },
         },
         blog: false,
         theme: {
@@ -74,6 +82,12 @@ const config: Config = {
           sidebarId: 'tutorialSidebar',
           position: 'left',
           label: 'Documentation',
+        },
+        {
+          type: 'docsVersionDropdown',
+          position: 'right',
+          dropdownItemsBefore: [],
+          dropdownItemsAfter: [{to: '/versions', label: 'All versions'}],
         },
         {
           href: 'https://github.com/wisupai/CRESP-DOCS',

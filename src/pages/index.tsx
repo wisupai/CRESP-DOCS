@@ -7,6 +7,10 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 import Translate from '@docusaurus/Translate';
 
+// 导入package.json中的版本号
+// @ts-ignore
+import pkgJson from '../../package.json';
+
 import styles from './index.module.css';
 
 function HomepageHeader() {
