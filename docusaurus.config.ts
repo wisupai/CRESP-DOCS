@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'CRESP Documentation',
   tagline: 'Computational Research Environment Standardization Protocol',
-  favicon: 'img/cresp_logo_no_text_no_bg_2000x2000.png',
+  favicon: 'img/cresp_logo_no_text_dark_bg_2000x2000.png',
 
   // Set the production url of your site here
   url: 'https://cresp.resciencelab.ai',
